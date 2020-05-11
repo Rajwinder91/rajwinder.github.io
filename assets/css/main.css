@@ -2566,11 +2566,10 @@ input, select, textarea {
 			margin: 0 0 0.5em 0;
 		}
 
-		.work-item p {
-			font-size: 0.8em;
-			line-height: 1.5em;
-			margin: 0;
-		}
+        .work-item p {
+            line-height: 1.5em;
+            color: #2C3E50;
+        }
 
 /* Header */
 
@@ -3219,3 +3218,15 @@ input, select, textarea {
 			}
 
 	}
+.project-name {
+    color: #c73049;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    transform: translatex(0%);
+}
+.technology {
+    color: #c73049;
+    font-weight: 600;
+}
