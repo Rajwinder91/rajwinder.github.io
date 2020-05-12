@@ -2215,12 +2215,13 @@ input, select, textarea {
 		padding: 0;
 	}
 
-		ul.labeled-icons li {
-			line-height: 1.75em;
-			margin: 1.5em 0 0 0;
-			padding-left: 2.25em;
-			position: relative;
-		}
+        ul.labeled-icons li {
+            line-height: 1.75em;
+            margin: 1.5em 0 0 0;
+            padding-left: 2.25em;
+            position: relative;
+            color: #2C3539;
+        }
 
 			ul.labeled-icons li:first-child {
 				margin-top: 0;
@@ -2343,13 +2344,13 @@ input, select, textarea {
 						padding-top: 0;
 					}
 
-					ul.actions:not(.fixed) li input[type="submit"],
-					ul.actions:not(.fixed) li input[type="reset"],
-					ul.actions:not(.fixed) li input[type="button"],
-					ul.actions:not(.fixed) li button,
-					ul.actions:not(.fixed) li .button {
-						width: 100%;
-					}
+                    ul.actions:not(.fixed) li input[type="submit"],
+                    ul.actions:not(.fixed) li input[type="reset"],
+                    ul.actions:not(.fixed) li input[type="button"],
+                    ul.actions:not(.fixed) li button,
+                    ul.actions:not(.fixed) li .button {
+                        width: 100%;
+                    }
 
 						ul.actions:not(.fixed) li input[type="submit"].icon:before,
 						ul.actions:not(.fixed) li input[type="reset"].icon:before,
@@ -2431,34 +2432,34 @@ input, select, textarea {
 
 /* Button */
 
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	.button {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		background-color: transparent;
-		border-radius: 0.35em;
-		border: solid 3px #efefef;
-		color: #787878 !important;
-		cursor: pointer;
-		display: inline-block;
-		font-weight: 400;
-		height: 3.15em;
-		height: calc(2.75em + 6px);
-		line-height: 2.75em;
-		min-width: 10em;
-		padding: 0 1.5em;
-		text-align: center;
-		text-decoration: none;
-		white-space: nowrap;
-	}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    background-color: #E4285A;
+    border-radius: 0.35em;
+    border: solid 3px #efefef;
+    color: #2C3539;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    height: 3.15em;
+    height: calc(2.75em + 6px);
+    line-height: 2.75em;
+    min-width: 10em;
+    padding: 0 1.5em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
 
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
@@ -2567,8 +2568,13 @@ input, select, textarea {
 		}
 
         .work-item p {
-            line-height: 1.5em;
             color: #2C3E50;
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0 0 24px;
+            text-align: justify;
+            text-justify: inter-word;
         }
 
 /* Header */
@@ -2592,7 +2598,7 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), url("../../images/bgnew.jpg");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								150%;
@@ -2604,6 +2610,7 @@ input, select, textarea {
 		text-align: right;
 		top: 0;
 		width: 35%;
+
 	}
 
 		#header > * {
@@ -2637,10 +2644,12 @@ input, select, textarea {
 			margin: 0;
 		}
 
-		#header .image.avatar {
-			margin: 0 0 1em 0;
-			width: 6.25em;
-		}
+        #header .image.avatar {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 13em;
+        }
 
 /* Footer */
 
@@ -2648,9 +2657,9 @@ input, select, textarea {
 		margin: 1em 0 0 0;
 	}
 
-		#footer .icons a {
-			color: rgba(255, 255, 255, 0.4);
-		}
+        #footer .icons a {
+            color: #2C3539;
+        }
 
 	#footer .copyright {
 		color: rgba(255, 255, 255, 0.4);
@@ -3229,4 +3238,51 @@ input, select, textarea {
 .technology {
     color: #c73049;
     font-weight: 600;
+}
+.project-heading {
+    color: #E4285A;
+    text-shadow: 1px 2px 2px #2C8B3F;
+    font-size: 40px;
+    font-weight: bold;
+}
+#header .name {
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    margin-top:10px;
+}
+#header .fullname {
+    text-align: center;
+    color: #151B54;
+    font-weight: bold;
+    border-bottom: 2px inset #E4285A;
+    font-size: 31px;
+    font-family: Courier;
+}
+#header .position {
+    text-align: center;
+    color: #151B54;
+    font-weight: bold;
+    font-size: 31px;
+
+}
+.about-me {
+    color: #2C3E50;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 24px;
+    text-align: justify;
+}
+.techhigh{
+    font-weight:bold;
+}
+.iconCol, .labeled-icons .icon {
+    color: #2C3539;
+}
+.icons-inner {
+    display: block;
+    margin-right: auto;
+    width: 15em;
+    margin-top:30px;
 }
