@@ -37,14 +37,7 @@ ol, ul {
 	list-style: none;
 }
 
-blockquote, q {
-	quotes: none;
-}
 
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
-	}
 
 table {
 	border-collapse: collapse;
@@ -3229,21 +3222,23 @@ input[type="button"],
 	}
 .project-name {
     color: #c73049;
-    font-weight: 800;
-    font-size: 30px;
+    font-size: 27px;
     margin-bottom: 10px;
     text-transform: uppercase;
     transform: translatex(0%);
 }
 .technology {
     color: #c73049;
-    font-weight: 600;
+    font-size: 18px;
 }
 .project-heading {
     color: #E4285A;
     text-shadow: 1px 2px 2px #2C8B3F;
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 40px !important;
+	margin-bottom: 35px !important;
+}
+.project-name a:hover{
+	text-decoration: none;
 }
 #header .name {
     text-align: center;
@@ -3288,4 +3283,101 @@ input[type="button"],
 }
 .poptrox-popup .caption {
     display: none !important;
+}
+
+.testimonials {
+  overflow: hidden;
+  position: relative;
+  max-height: 300px;
+}
+
+.testimonials {
+  background: #161d25;
+}
+
+.one-slide,
+.testimonial,
+.message {
+  border: none !important;
+  outline: none !important;
+}
+
+.icon-overlay {
+  position: absolute;
+  opacity: 0.3;
+  right: 10%;
+  top: 0;
+  height: auto;
+  width: 100%;
+  max-width: 400px;
+}
+
+.carousel-controls .control {
+  position: absolute;
+  transform: translateY(131%);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  z-index: 1;
+}
+
+.prev {
+  left: -2.25rem;
+}
+
+.next {
+  right: -2.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonials {
+    max-height: 700px;
+  }
+  .icon-overlay {
+    height: 300px;
+    top: calc(50% - 150px);
+  }
+  .carousel-controls .control {
+    width: 25px;
+    height: 25px;
+    top: inherit;
+  }
+  .prev {
+    left: 0;
+  }
+  .next {
+    right: 0;
+  }
+  .control i {
+    font-size: .7rem;
+  }
+  .testimonials .message {
+    font-size: 1rem;
+  }
+  .testimonials h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.testImg{
+	width: 150px;
+	border-radius: 50px;
+}
+.testimonialText{
+	font-size: 18px;
+	font-style: italic;
+}
+.testimonialName{
+	display: block;
+    font-size: 80%;
+	margin-top: 20px;
+}
+.testHeading{
+	text-align: center;
+    font-size: 22px;
+    margin-top: 31px;
+    margin-bottom: -39px;
+    color: #c73049;
+	text-transform: uppercase;
 }
